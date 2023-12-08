@@ -1,11 +1,15 @@
-def is_grid_full(game_board):
-    for row in game_board:
+import game 
+
+def is_grid_full():
+    for row in game.game_board:
         for cell in row:
             if cell == 0:  # If any cell is empty, return False
                 return False
-    return True
+    if verify_winner() == None:
+        return True
 
-def verify_winner(game_board):
+def verify_winner():
+    game_board = game.game_board
     # verify rows
     for x in game_board:
         if len(set(x)) == 1 and x[0] != 0:
