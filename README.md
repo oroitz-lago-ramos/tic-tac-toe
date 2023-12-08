@@ -1,2 +1,4 @@
-Ajouter le ocncept de turn ou il y a des 1 et des -1
-Demander ou et comment implémenter l'ia
+Implementer IA
+Et message du gagnant
+historique
+option recommencer reset game board

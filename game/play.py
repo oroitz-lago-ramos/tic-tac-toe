@@ -13,7 +13,10 @@ def play_game():
     winner = game.verify_winner()
     is_grid_full = game.is_grid_full()
     if winner != None:
-        print(winner)
+        if winner == 1: 
+            print("Le joueur X à gagné")
+        else:
+            print("Le joueur O à gagné")
         game.stop_running()
     if is_grid_full:
         print("Egalité!")
